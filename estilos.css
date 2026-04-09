@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+   background: radial-gradient(circle, #ffe700, #e8f075);
+}
+h1{
+    text-align: center;
+}
+header{
+    display: flex;
+    background-color: #f5f5dc;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-height: 100px;
+}
+a{
+    color: rgb(66, 77, 9);
+    text-decoration: none;
+    
+}
+nav a{
+    font-weight: 600;
+    padding-right: 13px;
+}
+nav a:hover{
+    color: rgb(133, 89, 9); 
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 200px;
+    margin-right: 13px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+
+
+@media (max-width: 680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+        
+    }
+}
+
+.contenedor-bloques {
+  display: flex;         /* Activa el modo de bloques flexibles */
+  gap: 20px;            /* Espacio entre cada bloque */
+  flex-wrap: wrap;      /* Si no caben, saltan a la siguiente línea */
+  justify-content: center; /* Centra los bloques en la pantalla */
+}
+
+.tarjeta {
+  width: 300px;         /* Ancho de cada bloque */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;     /* Asegura que la imagen no se salga de las esquinas redondeadas */
+  background-color: #fff;
+  margin: 0;            /* Limpia márgenes por defecto de figure */
+}
+
+.tarjeta img {
+  width: 100%;          /* La imagen ocupa todo el ancho del bloque */
+  height: 200px;        /* Altura fija para uniformidad */
+  object-fit: cover;    /* Evita que la imagen se deforme al ajustarse */
+}
+
+.tarjeta figcaption {
+  padding: 15px;        /* Espacio interno para el texto */
+  text-align: center;
+}
