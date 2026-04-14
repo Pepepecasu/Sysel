@@ -1,0 +1,159 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header y Navegación */
+header {
+    background-color: #ffffff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo-text h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: -5px;
+}
+
+.logo-text span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav .nav-link:hover {
+    color: #808080;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fondo-empaque.jpg'); /* Reemplazar con imagen real */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Secciones de Información */
+.info-section, .products-section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.mision-vision {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    min-width: 280px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Listado de Productos */
+.products-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.products-section li {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.products-section li:hover {
+    transform: translateY(-5px);
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 10% 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info h3, .valores h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
